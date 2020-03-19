@@ -33,4 +33,6 @@ public @interface SdkSuppress {
   int minSdkVersion() default 1;
   /** The maximum API level to execute (inclusive) */
   int maxSdkVersion() default Integer.MAX_VALUE;
+  /** The platform to execute (inclusive) */
+  String isCodeName() default "REL";
 }
